@@ -23,7 +23,7 @@ $numeros = array(
   )
     
 );
-$operaciones = array( "sumar" => "+", "restar" => "-", "multiplicar" => "*", "dividir" => "/" );
+$operaciones = array( "Sumar" => "+", "Restar" => "-", "Multiplicar" => "*", "Dividir" => "/" );
 
 foreach ($numeros as $factores) {
        foreach ($operaciones as $simbolo) {
@@ -34,5 +34,3 @@ foreach ($numeros as $factores) {
 }
 
 ?>
-
-
