@@ -14,7 +14,7 @@ $operaciones = array('Suma' => '+', 'Resta' => '-', 'Multiplicacion' => '*', 'Di
 foreach ($numeros as $factores) {
 foreach ($operaciones as $simbolo) {
 	
- Calculadora($factores["num1"], $factores["num2"], $simbolo);
+ calculadora($factores["num1"], $factores["num2"], $simbolo);
 }
 }
 ?>
