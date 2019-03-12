@@ -1,4 +1,12 @@
 <?php
+/**
+* Class and Function List:
+* Function list:
+* - countingCharacters()
+* - replace()
+* - wordCounting()
+* Classes list:
+*/
 $strings = [" Lorem ipsum dolor sit amet, consectetur EnTrenamiento elit, sed do eiusmod tempor incididunt ut", "Sed ut ENTRENAMIENTO unde omnis iste natus error sit voluptatem accusantium doloremque entrenamiento, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae ENTrenamiento dicta sunt explicabo. ", "Phasellus laoreet eu entrenamiento orci et tincidunt. Quisque ac drupal gravida sem, non eleifend erat EntreNAMiento."];
 // número de caracteres de cada cadena. también el total de caracteres
 // número de espacios de cada cadena. también el total de espacios
