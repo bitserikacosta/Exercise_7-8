@@ -47,12 +47,13 @@ function replace($strings)
         // Reemplaza la palabra Entrenamiento por "<strong>Entrenamiento</strong>", de forma que se muestre en negrita
         $replaceValue = str_replace($searchValue, "<strong>Entrenamiento.</strong>", $Value);
         $strings[$wordToReplace] = $replaceValue;
+        $max_char = 100;
+        echo @substr($strings[$wordToReplace], 0, $max_char) . "<br />";
         echo "<ul><li>" . $strings[$wordToReplace] . "</li></ul>";
         $wordToReplace++;
         // Recorta todas las cadenas a 100 caracteres (quédate con los primeros 100 caracteres).
         // imprime las cadenas resultantes, separadas por un salto de línea HTML (<br />).
-        $max_char = 100;
-        echo @substr($strings[$wordToReplace], 0, $max_char) . "<br />";
+        
     }
     return $strings;
 }
