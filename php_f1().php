@@ -27,7 +27,7 @@ function replace($strings)
     $wordToReplace = 0;
     foreach ($strings as $ValueReplaced)
     {
-        $searchValue = array( "EnTrenamiento", "ENTRENAMIENTO", "entrenamiento", "EntreNAMiento", "ENTrenamiento" );
+        $searchValue = array("EnTrenamiento", "ENTRENAMIENTO", "entrenamiento", "EntreNAMiento", "ENTrenamiento");
         $replacedWord = str_replace($searchValue, "<strong>Entrenamiento</strong>", $ValueReplaced);
         $strings[$wordToReplace] = $replacedWord;
         $max_char = 100;
