@@ -17,32 +17,34 @@ function countingCharacters($strings)
     }
     echo "<li>Las oraciones tienen " . $charactersAmount . " caracteres</li>";
     echo "<li>Las oraciones tienen " . $whiteSpacesAmount . " espacios<br><br>";
+    return $strings;
 }
+
+
 function replace($strings)
 {
-    $wordToReplace = 0;
     foreach ($strings as $ValueReplaced) {
         $searchValue = array("EnTrenamiento", "ENTRENAMIENTO", "entrenamiento", "EntreNAMiento", "ENTrenamiento");
         $replacedWord = str_replace($searchValue, "<strong>Entrenamiento</strong>", $ValueReplaced, $c);
-        $strings[$wordToReplace] = $replacedWord;
         $max_char = 100;
         echo "Hay " . $c . " Entrenamiento";
         echo "<ul><li>" . @substr($replacedWord, 0, $max_char) . "</ul></li>";
         echo "<ul><li>" . $replacedWord . "</ul></li><hr>";
-        $wordToReplace++;
     }
     return $strings;
 }
+
+
 function wordCounting($strings)
 {
-    $texto = 0;
     $word = replace($strings);
     foreach ($word as $Value) {
-        $texto += substr_count($Value, "Entrenamiento");
+        $EntrenamientoFound += preg_match_all('/Entrenamiento/i', $Value, $matches);
     }
-    echo "El total Entrenamiento son: " . $texto . " " . "<br>";
+    echo "<li>Las oraciones tienen " . $EntrenamientoFound . " Entrenamiento<br><br>";
     return $word;
 }
+
 countingCharacters($strings);
 $word = wordCounting($strings);
 ?>
