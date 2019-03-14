@@ -37,7 +37,7 @@ function replace($strings)
 
 function wordCounting($strings)
 {
-	$EntrenamientoFound = 0;
+    $EntrenamientoFound = 0;
     $word = replace($strings);
     foreach ($word as $Value) {
         $EntrenamientoFound += preg_match_all('/Entrenamiento/i', $Value, $matches);
