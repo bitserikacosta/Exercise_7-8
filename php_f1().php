@@ -18,8 +18,6 @@ function countingCharacters($strings)
     echo "<li>Las oraciones tienen " . $charactersAmount . " caracteres</li>";
     echo "<li>Las oraciones tienen " . $whiteSpacesAmount . " espacios<br><br>";
 }
-
-
 function replace($strings)
 {
     $wordToReplace = 0;
@@ -35,8 +33,6 @@ function replace($strings)
     }
     return $strings;
 }
-
-
 function wordCounting($strings)
 {
     $texto = 0;
