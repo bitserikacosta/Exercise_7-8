@@ -30,7 +30,7 @@ function replace($strings)
         $max_char = 100;
         echo "Hay " . $c . " Entrenamiento";
         echo "<ul><li>" . @substr($replacedWord, 0, $max_char) . "</ul></li>";
-        echo "<ul><li>" . $strings[$wordToReplace] . "</ul></li><hr>";
+        echo "<ul><li>" . $replacedWord . "</ul></li><hr>";
         $wordToReplace++;
     }
     return $strings;
@@ -49,3 +49,4 @@ function wordCounting($strings)
 }
 countingCharacters($strings);
 $word = wordCounting($strings);
+?>
