@@ -1,0 +1,54 @@
+Crea el script php_f2.php con las siguientes características.
+     
+    Dado el array $numbers, realiza las siguientes operaciones:
+     
+    $numbers = [3, 45, 22, 12, 33, 23, 44, 1, 121];
+    - Imprime el número de elementos del array.
+    - Cuenta e imprime el número de elementos pares y de elementos impares.
+    - Ordena los elementos del array en orden ascendente.
+    - Crea un array llamado $morenumbers, a partir de la cadena "5:76:7:8". Utiliza las funciones de arrays adecuadas para convertir la cadena en un array de números.
+    - Combina los dos arrays, de forma que los números de $numbers queden en primer lugar. Almacena el resultado en el array $numbers.
+    - Ordena los elementos del array en orden descendente. 
+    - Por último, imprime el array $numbers resultante utilizando print_r().
+    
+    
+    Crea el script php_f3.php con las siguientes características.
+     
+    Dado el array de países $countries, realiza las acciones que se indican:
+     
+    $countries = [
+    'uk' => 'United Kingdom',
+    'fr' => 'France',
+    'pt' => 'Portugal',
+    've' => 'Venezuela',
+    'at' => 'Austria',
+    'es' => 'Spain',
+    'co' => 'Colombia'
+    ];
+    - Nota 1: Ten en cuenta que el array tiene que ser tratado de forma dinámica. Si se añaden más países, debe funcionar correctamente.
+    - Nota 2: Realiza los cambios directamente sobre el array $countries.
+    - Comprueba si tu país está en la lista. Si está, imprime la cadena "Mi país de origen es X y está en la lista". Si no está, imprime       la cadena: "Mi país de origen es X pero no está en la lista". Sustituye X por el nombre de tu país.
+    - Ordena el array en orden alfabético según el nombre del país (y sin perder la relación de claves)
+    - Imprime el array con print_r().
+    - Crea e imprime una cadena a partir del array, separando los nombres de países por ", " (coma y espacio). 
+    
+    
+    Crea el script php_f4.php con las siguientes características.
+     
+    Dado el array de fechas $dates, realiza las siguientes acciones:
+     
+    $dates = [
+    ['day' => 3, 'month' => 12, 'year' => 2005],
+    ['day' => 30, 'month' => 2, 'year' => 2017],
+    ['day' => 7, 'month' => 9, 'year' => 2019],
+    ['day' => 1, 'month' => 11, 'year' => 2014]
+    ];
+    - Nota 1: Ten en cuenta que el array puede tener un número dinámico de elementos.
+    - Nota 2: Realiza los cambios directamente sobre el array $dates.
+    - Recorre el array y comprueba si cada fecha es válida. Si encuentras una fecha no válida, elimínala del array (unset()).
+    - Para cada elemento del array, añade un nuevo índice 'timestamp', y asígnale el valor de cada fecha en formato timestamp. Por ejemplo:
+    ['day' => 3, 'month' => 12, 'year' => 2005, 'timestamp' => 1133568000],
+    - Añade una nueva entrada al array con la fecha actual, tanto en elementos (day, month, year) como en formato timestamp. La fecha actual se tiene que obtener dinámicamente.
+    - Imprime el array resultante con print_r().
+    
+    
