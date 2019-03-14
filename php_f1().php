@@ -16,7 +16,7 @@ function countingCharacters($strings)
         $whiteSpacesAmount += preg_match_all('/[ ]/i', $eachSentence, $matches);
     }
     echo "<li>Las oraciones tienen " . $charactersAmount . " caracteres</li>";
-    echo "<li>Las oraciones tienen " . $whiteSpacesAmount . " espacios<br><br>";
+    echo "<li>Las oraciones tienen " . $whiteSpacesAmount . " espacios</li><br><br>";
     return $strings;
 }
 
@@ -42,7 +42,7 @@ function wordCounting($strings)
     foreach ($word as $Value) {
     $EntrenamientoFound += preg_match_all('/Entrenamiento/i', $Value, $matches);
     }
-    echo "<ul><li>Las oraciones tienen " . $EntrenamientoFound . " Entrenamiento</ul><br>";
+    echo "<ul><li>Las oraciones tienen " . $EntrenamientoFound . " Entrenamiento</ul></li>";
     return $word;
 }
 
