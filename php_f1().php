@@ -42,7 +42,7 @@ function wordCounting($strings)
     foreach ($word as $Value) {
     $EntrenamientoFound += preg_match_all('/Entrenamiento/i', $Value, $matches);
     }
-    echo "<li>Las oraciones tienen " . $EntrenamientoFound . " Entrenamiento<br><br>";
+    echo "<ul><li>Las oraciones tienen " . $EntrenamientoFound . " Entrenamiento</ul><br>";
     return $word;
 }
 
