@@ -19,3 +19,6 @@ foreach($countries as $x => $x_value) {
 }
 echo "<hr>";
 print_r($countries);
+echo "<hr>";
+$comma_list =  implode(", ", $countries);
+echo $comma_list;
