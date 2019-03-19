@@ -1,3 +1,5 @@
+<?php 
+
 function parsingNumbers($numbers, $arraySize)
 {
     $Pares = 0;
@@ -26,6 +28,7 @@ for ($x = 0; $x < $valuesPrint; $x++) {
     echo "<li>" . $numbers[$x] . "</li>";
 }
 echo "<hr>";
+
 //Crea un array llamado $morenumbers, a partir de "5:76:7:8". Usa las funciones de arrays para convertir la cadena en un array de números.
 $morenumbers = "5:76:7:8";
 $array =  explode(":", $morenumbers);
@@ -33,6 +36,7 @@ foreach ($array as $key => $Numero) {
     echo "<li>$key => $Numero</li>" .  PHP_EOL;
 }
 echo "<hr>";
+
 //Combina los dos arrays, de forma que $numbers quede en primer lugar. Almacena el resultado en el array $numbers.
 $numbers = array_merge($numbers, $array =  explode(":", $morenumbers));
 //Ordena los elementos del array en orden descendente.
@@ -44,3 +48,4 @@ for ($x = 0; $x < $arrlength; $x++) {
 //Por último, imprime el array $numbers resultante utilizando print_r().
 echo "<hr>";
 print_r($numbers);
+?>
